@@ -15,7 +15,7 @@ body{
     font-size: 50px;
     text-align: center;
     position: relative;
-    top: -30px;
+    top: 13px;
     font-family: fantasy;
     letter-spacing: 1.5px;
     color: white;
@@ -51,11 +51,15 @@ body{
     position: relative;
     top: 80px;
     margin: 0px auto;
+    transition: all 300ms; /*Para manejar la velocidad de la transicion al hacer hover a las imagenes*/
 }
 .column img:hover{
-    width: 100%;
-    height: 250px;
+    /*width: 100%;
+    height: 250px;*/
+    transform: scale(1.1); /*Mejor efecto visual para agrandar la imagen al hacer hover sin ver compromeetido el espacio de los demas elementos*/
 }
+
+
 video{
     position: relative;
     width: 100%;
@@ -204,4 +208,9 @@ video{
     margin: 0;
     border-radius: 5px;
     
+}
+
+/*Nuevos estilos*/
+bg-gray-lobo{
+    background-color: #e6e6e6;
 }

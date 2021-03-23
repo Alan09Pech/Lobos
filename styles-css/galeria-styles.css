@@ -1,0 +1,60 @@
+.container-slider > .titulo-foto{
+    width: 100%;
+    font-family: fantasy;
+    text-align: center;
+    color: #cea135;
+}
+
+.container-slider > .slider2{
+    width: 60%;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.container-slider > .slider2 ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-slider > .slider2 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.7s;
+    border-radius: 10px;
+    border: 5px solid brown;
+}
+
+.container-slider > .slider2 input[type="radio"]{
+    display: none;
+}
+
+.container-slider > .slider2 input[type="radio"]:checked ~ img{
+    opacity: 1;
+}
+
+.container-slider > .slider2 input[type="radio"] + label{
+    position: relative;
+    z-index: 50;
+    margin: 30px;
+
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    display: block;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.container-slider > .slider2 input[type="radio"]:checked + label{
+    background: red;
+    border: 2px solid yellow ;
+}

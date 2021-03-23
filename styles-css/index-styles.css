@@ -1,0 +1,73 @@
+/*********************** ESTILOS DEL CUERPO (index) ***********************/
+
+.content-info{
+    display: flex;
+    font-size: 18px;
+}
+
+/************************* COLUMNA DE LA IZQUIERDA *************************/
+
+.page-container > .content-info > .column-left{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 20px;
+}
+
+.page-container > .content-info > .column-left video{
+    width: 100%;
+    height: 100%;
+}
+
+.page-container > .content-info > .column-left img{
+    width: 95%;
+    height:300px;
+    padding: 15px;
+    transition: all 300ms; /*Para manejar la velocidad de la transicion al hacer hover a las imagenes*/
+}
+
+.page-container > .content-info > .column-left img:hover{
+    transform: scale(1.1); /*Mejor efecto visual para agrandar la imagen al hacer hover sin ver compromeetido el espacio de los demas elementos*/
+}
+
+
+/************************* COLUMNA DE LA DERECHA *************************/
+.page-container > .content-info > .column-right{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.page-container > .content-info > .column-right > .titulo_semblanza{
+    font-family: fantasy;
+    height: 45px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.page-container > .content-info > .column-right > .content-list-year{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-container > .content-info > .column-right > .video_YT iframe{
+    width: 100%; 
+    height: 315px;
+    padding: 15px;
+}
+
+.page-container > .content-info > .column-right > .imagen{
+    height: 300px;
+    margin-top: 70px;
+}
+
+.page-container > .content-info > .column-right > .imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+

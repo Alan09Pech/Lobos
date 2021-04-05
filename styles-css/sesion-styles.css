@@ -1,0 +1,70 @@
+.registro{
+    margin-top: 50px;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+.registro > .contenedor-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro > .contenedor-registro > .logo img{
+    width: 250px;
+    height: 250px;
+}
+
+.registro > .contenedor-registro > .sesion{
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro input{
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid brown;
+    transition: all 0.3s;
+}
+
+.registro input:focus{
+    outline: none;
+    border-bottom: 3px solid #cea135;
+}
+
+.registro label:hover{
+    cursor: pointer;
+}
+
+
+/************* Botones ***********/
+
+.btnSubmit{
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.btnSubmit > .btn-Entrar > .btn{
+    background-color: brown;
+    font-size: 17px;
+    font-family: fantasy;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 9px;
+    letter-spacing: 1.5px;
+}
+
+.btnSubmit > .btn-Salir input{
+    background-color: brown;
+    font-size: 17px;
+    font-family: fantasy;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}

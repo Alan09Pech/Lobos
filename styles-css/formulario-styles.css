@@ -1,0 +1,138 @@
+.contenedor-form input{
+    margin: 10px;
+    border: none;
+    border-bottom: 3px solid brown;
+    transition: all 0.5s;
+}
+
+.contenedor-form input:focus{
+    outline: none;
+    border-bottom: 3px solid #cea135;
+}
+
+.contenedor-form label{
+    font-size: 20px ;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.contenedor-form textarea{
+    border: 3px solid brown;
+    transition: all 0.5s;
+}
+
+.contenedor-form textarea:focus{
+    outline: none;
+    border: 3px solid #cea135;
+}
+
+.contenedor-form > .titulo{
+    background-color: brown;
+    font-family: fantasy;
+    font-size: 28px;
+    text-align: center; 
+}
+
+/*********** Datos Personales **********/
+
+.contenedor-form > .contenedor-datosPersonales{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.contenedor-form > .contenedor-datosPersonales > .imgUsuario{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+}
+
+.contenedor-form > .contenedor-datosPersonales > .imgUsuario img{
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-form > .contenedor-datosPersonales > .datosPersonales{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 15px;
+    justify-content:space-between;
+}
+
+/*********** Datos Académicos **********/
+
+.contenedor-form > .datosAcademicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+}
+.contenedor-form > .datosAcademicos > .contenedor-datosAcademicos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+.contenedor-form > .datosAcademicos > .contenedor-especialidadesGC{
+
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.contenedor-form > .datosAcademicos > .contenedor-especialidadesGC > .txt-especialidad{
+
+    line-height: 50px;
+    font-family: fantasy;
+    font-size: 23px;
+    text-align: center;
+    margin-right: 20px;
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+.contenedor-form > .datosAcademicos > .contenedor-especialidadesGC > .especialidadGC{
+    display: flex;
+}
+
+.contenedor-form > .datosAcademicos > .contenedor-especialidadesGC > .especialidadGC > .parte{
+    margin-right: 20px;
+}
+
+
+
+/*********** Datos Médicos **********/
+
+
+.contenedor-form > .datosMedicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+/********** Boton *****************/
+.btnSubmit  {
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnSubmit > .btn-Registrar input{
+    background-color: brown;
+    font-size: 23px;
+    font-family: fantasy;
+    padding: 10px 25px;
+}
+
+.btnSubmit > .btn-Salir input{
+    background-color: brown;
+    font-size: 23px;
+    font-family: fantasy;
+    padding: 10px 25px;
+}

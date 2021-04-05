@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <link rel="stylesheet" href="imagenes.css">
-    <link rel="stylesheet" href="secciones.css">
-    <link rel="stylesheet" href="sesion.css">
+    <link rel="stylesheet" href="styles-css/sesion-styles.css">
+    <link rel="stylesheet" href="styles-css/generales.css">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +11,12 @@
     <title>INICIAR SESIÓN</title>
 </head>
 <body>
+    <div class="portada">   
+        <div class="banner2">
+            <img src="IMG/pleca.jpg" width="100%" height="200px">
+        </div>
 
-    <div class="portada">        
-        <h3 class="lema">Grupo cívico "Lobos"</h3>
+        <h2 class="lema">Grupo cívico "Lobos"</h2>
     </div>
 
     <div class="registro">
@@ -25,9 +27,23 @@
 
             <div class="sesion">
                 <form action="loguear.php" method="POST">
-                    Usuario: <input type="text" name="usuario" placeholder="Usuario">
-                    contraseña: <input type="password" name="contraseña" placeholder="Contraseña">
-                    <button type="sumbit">Entrar</button>
+                    <div>
+                        <label for="usuario">Usuario</label>
+                        <input type="text" name="usuario" placeholder="Usuario" id="usuario">
+                    </div>
+
+                    <div>
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" name="contraseña" placeholder="Contraseña" id="contraseña">
+                    </div>
+                    <div class="btnSubmit">
+                        <div class="btn-Entrar">
+                            <input type="submit" class="btn" value="Entrar">
+                        </div>
+                        <div class="btn-Salir">
+                            <a href="index.html"> <input type="button" value="Salir" class="btn"></a>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>

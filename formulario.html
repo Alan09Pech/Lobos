@@ -12,21 +12,6 @@
     <link rel="stylesheet" href="./styles/bootstrap/js/bootstrap.min.js">
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="formulario.html">REGISTRO LOBOS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link " href="index.html">INICIO</a>
-            <a class="nav-link" href="galeria.html">GALERIA</a>
-            <a class="nav-link" href="contacto.html">CONTACTO</a>
-            <a class="nav-link active" href="formulario.html">REGISTRO LOBO</a>
-          </div>
-        </div>
-    </nav>
 
     <div class="portada">   
         <div class="banner2">
@@ -38,173 +23,247 @@
     <br><br>
 
     <form action="registrar.php" method="POST">
-        <div class="contenedor_form">
+        <div class="contenedor-form">
             <div class="titulo">
                 Datos personales
             </div>
-            <div class="imgUsuario">
-                <a target="_blank" href="https://drive.google.com/drive/folders/1b7t0mXOJC_-dAFoYY12GO4y50nFLhOK0?usp=sharing"><img src="IMG/Imagen3(2).png" alt=""></a>
+            <div class="contenedor-datosPersonales">
+                <div class="imgUsuario">
+                    <a target="_blank" href="https://drive.google.com/drive/folders/1b7t0mXOJC_-dAFoYY12GO4y50nFLhOK0?usp=sharing">
+                        <img src="IMG/Imagen3(2).png" alt="">
+                    </a>
+                </div>
+                <div class="datosPersonales">
+                    <div>
+                        <label for="last-name">Apellido(s)</label>
+                        <input type="text" name="apellidos" id="last-name" required="">
+                    </div>
+                    <div>
+                        <label for="name"> Nombre(s)</label>
+                        <input type="text" name="nombre" id="name">
+                    </div>
+                    <div>
+                        <label for="date">Fecha de nacimiento</label>
+                        <input type="date" name="fecha" id="date">
+                    </div>
+                    <div>
+                        <label for="">Sexo:</label>
+    
+                        <input type="radio" name="sexo" value="Hombre" id="male">
+                        <label for="male">Hombre</label>
+    
+                        <input type="radio" name="sexo" value="Mujer" id="women">
+                        <label for="women">Mujer</label>
+                    </div>
+         
+                    <div>
+                        <label for="street"> Calle</label>
+                        <input type="text" name="calle" id="street">
+                    </div>
+                    <div>
+                        <label for="number">N°</label>
+                        <input type="text" name="N°" id="number">
+                    </div>
+                    <div>
+                        <label for="cruce">Cruce</label>
+                        <input type="text" name="cruce" id="cruce">
+                    </div>
+                    <div>
+                        <label for="colonia">Colonia</label>
+                        <input type="text" name="colonia" id="colonia">
+                    </div>
+                    <div>
+                        <label for="municipio">Municipio</label>
+                        <input type="text" name="municipio" id="municipio">
+                    </div>
+                    <div>
+                        <label for="cp">C.P.</label>
+                        <input type="text" name="CP" id="cp">
+                    </div>
+                    <div>
+                        <label for="celular">Teléfono</label>
+                        <input type="number" name="celular" id="celular">
+                    </div>
+                    <div>
+                        <label for="curp">CURP</label>
+                        <input type="text" name="curp" id="curp">
+                    </div>
+                    <div>
+                        <label for="Mpersonal">Mail personal</label>
+                        <input type="text" name="Mpersonal" id="Mpersonal">
+                    </div>
+                    <div>
+                        <label for="Minstitucional"> Mail institucional</label>
+                        <input type="text" name="Minstitucional" id="Minstitucional" placeholder="L(matrícula)@merida.tecnm.mx">
+                    </div>
+                    <div>
+                        <label for="facebook">Perfil de Facebook</label>
+                        <input type="text" name="facebook" id="facebook">
+                    </div>
+                    <div>
+                        <label for="fechaIngres">Fecha de ingreso</label>
+                        <input type="date" name="fechaIngreso" id="fechaIngreso">
+                    </div>
+                    <div>
+                        <label for="celEmergencia">Celular de emergencia(parentezco)</label>
+                        <input type="text" name="celEmergencia" id="celEmergencia" placeholder="Ej:  Papá: 9521486702">
+                    </div>
+                </div>
             </div>
-
-            <div class="datosPersonales">
-                <div>
-                    <input type="text" name="apellidos" id="last-name">
-                    <label for="last-name">Apellido(s)</label>
-                </div>
-                <div>
-                    <input type="text" name="nombre" id="name">
-                    <label for="name"> Nombre(s)</label>
-                </div>
-                <div>
-                    <input type="date" name="fecha" id="date">
-                    <label for="date">Fecha de nacimiento</label>
-                </div>
-                <div>
-                    <label for="">Sexo:</label>
-
-                    <input type="radio" name="sexo" value="Hombre" id="male">
-                    <label for="male">Hombre</label>
-
-                    <input type="radio" name="sexo" value="Mujer" id="women">
-                    <label for="women">Mujer</label>
-                </div>
-     
-                <div>
-                    <input type="text" name="calle" id="street">
-                    <label for="street"> Calle</label>
-                </div>
-                <div>
-                    <input type="text" name="N°" id="number">
-                    <label for="number">N°</label>
-                </div>
-                <div>
-                    <input type="text" name="cruce" id="cruce">
-                    <label for="cruce">Cruce</label>
-                </div>
-                <div>
-                    <input type="text" name="colonia" id="colonia">
-                    <label for="colonia">Colonia</label>
-                </div>
-                <div>
-                    <input type="text" name="municipio" id="municipio">
-                    <label for="municipio">Municipio</label>
-                </div>
-                <div>
-                    <input type="text" name="CP" id="cp">
-                    <label for="cp">C.P.</label>
-                </div>
-                <div>
-                    <input type="number" name="celular" id="celular">
-                    <label for="celular">Teléfono</label>
-                </div>
-                <div>
-                    <input type="text" name="curp" id="curp">
-                    <label for="curp">CURP</label>
-                </div>
-
+                    
+            <div class="titulo">
+                Datos académicos
             </div>
-
-            <div id="etiquetas"></div>
-                <div class="mail">
-                    Mail personal: <input type="text" name="Mpersonal">
-                 
-                    Mail institucional: <input type="text" name="Minstitucional" placeholder="L(matrícula)@merida.tecnm.mx">
-                
-                    Perfil de Facebook: <input type="text" name="facebook">
-                  
-                    Fecha de ingreso: <input type="date" name="fechaIngreso">
-                 
-                    Celular de emergencia(parentezco): <input type="text" name="celEmergencia" placeholder="Ej:  Papá: 9521486702">
-                </div>
-                
-            </div>
-        </div>
-
-        <div class="contenedor" id="academicos"> <br> Datos académicos
-            <br>
-            <br>
-            <div id="etiquetas">
-                Matrícula: <input type="text" name="matricula" placeholder="Letras con mayuscula">
-                Carrera:   <select name="carrera">
-                                <option selected disabled>Selecciona una opción</option>
-                                <option value="Ing. Ambiental">Ing. Ambiental</option>
-                                <option value="Ing. Bioquímica">Ing. Bioquímica</option>
-                                <option value="Ing. Biomédica">Ing. Biomédica</option>
-                                <option value="Ing. Civil">Ing. Civil</option>
-                                <option value="Ing. Eléctrica">Ing. Eléctrica</option>
-                                <option value="Ing. Electrónica">Ing. Electrónica</option>
-                                <option value="Ing. Gestión Empresarial">Ing. Gestión Empresarial</option>
-                                <option value="Ing. Industrial">Ing. Industrial</option>
-                                <option value="Ing. Mecánica">Ing. Mecánica</option>
-                                <option value="Ing. Química">Ing. Química</option>
-                                <option value="Ing. Sistemas Computacionales">Ing. Sistemas Computacionales</option>
-                                <option value="Lic. En Administración">Lic. En Administración</option>
-                                <option value="Lic. En Administración A Distancia">Lic. En Administración A Distancia</option>
-                            </select>
-                Ingreso: <input type="number" min="1" max="13" name="ingreso" placeholder="Ej: 7">
-
-                <div class="divEsp">Especialidad en el grupo cívico.
-                    Puedes marcar mas de 1
+            <div class="datosAcademicos">
+                <div class="contenedor-datosAcademicos">
+                    <div>
+                        <label for="matricula">Matrícula</label>
+                        <input type="text" name="matricula" id="matricula" placeholder="Letras con mayuscula">
+                    </div>
+                    <div>
+                        <label for="carrera">Carrera</label>
+                        <select name="carrera" id="carrera">
+                            <option selected disabled>Selecciona una opción</option>
+                            <option value="Ing. Ambiental">Ing. Ambiental</option>
+                            <option value="Ing. Bioquímica">Ing. Bioquímica</option>
+                            <option value="Ing. Biomédica">Ing. Biomédica</option>
+                            <option value="Ing. Civil">Ing. Civil</option>
+                            <option value="Ing. Eléctrica">Ing. Eléctrica</option>
+                            <option value="Ing. Electrónica">Ing. Electrónica</option>
+                            <option value="Ing. Gestión Empresarial">Ing. Gestión Empresarial</option>
+                            <option value="Ing. Industrial">Ing. Industrial</option>
+                            <option value="Ing. Mecánica">Ing. Mecánica</option>
+                            <option value="Ing. Química">Ing. Química</option>
+                            <option value="Ing. Sistemas Computacionales">Ing. Sistemas Computacionales</option>
+                            <option value="Lic. En Administración">Lic. En Administración</option>
+                            <option value="Lic. En Administración A Distancia">Lic. En Administración A Distancia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="ingreso">Ingreso</label>
+                        <input type="number" min="1" max="13" name="ingreso" id="ingreso" placeholder="   Ej: 7">
+                    </div>
                 </div>
 
-                    <table class="esp" >
-                        
-                        <tr>
-                            <td><input type="hidden" name="guion" value="-">
-                                <input type="radio" name="guion" value="Guion">Guion</td>
-                            <td><input type="hidden" name="vd" value="-">
-                                <input type="radio" name="vd" value="Vanguardia Derecho">VD</td>
-                            <td><input type="hidden" name="Caja" value="-">
-                                <input type="radio" name="Caja" value="Caja">Caja</td>
-                            <td><input type="hidden" name="Cabo_cajero" value="-">
-                                <input type="radio" name="Cabo_cajero" value="Cabo cajero">Cabo Cajero</td>
+                <div class="contenedor-especialidadesGC">
+                    <div class="txt-especialidad">Especialidad en el grupo cívico. <br>
+                        Puedes marcar mas de 1
+                    </div>
+                    <div class="especialidadGC">
+                        <div class="parte">
+                            <div><input type="hidden" name="guion" value="-">
+                                <input type="radio" name="guion" value="Guion" id="guion">
+                                <label for="guion">Guion</label>
+                            </div>
+                            <div><input type="hidden" name="lienzo" value="-">
+                                <input type="radio" name="lienzo" value="Lienzo" id="lienzo">
+                                <label for="lienzo">Lienzo</label>
+                            </div>
+                            <div><input type="hidden" name="abanderado" value="-">
+                                <input type="radio" name="abanderado" value="Abanderado" id="abanderado">
+                                <label for="abanderado">Abanderado</label>
+                            </div>
+                            <div><input type="hidden" name="comandanteEB" value="-">
+                                <input type="radio" name="comandanteEB" value="Comandante Escolta" id="comandanteEB">
+                                <label for="comandanteEB">Comandante</label>
+                            </div>
+                        </div>
+
+                        <div class="parte">
+                            <div>
+                                <input type="hidden" name="vd" value="-">
+                                <input type="radio" name="vd" value="Vanguardia Derecho" id="vd">
+                                <label for="vd">VD</label>
+                            </div>
+                            <div>
+                                <input type="hidden" name="vi" value="-">
+                                <input type="radio" name="vi" value="Vanguardia Izquierdo" id="vi">
+                                <label for="vi">VI</label>
+                            </div>
+                            <div>
+                                <input type="hidden" name="rd" value="-">
+                                <input type="radio" name="rd" value="Retaguardia Derecho" id="rd">
+                                <label for="rd">RD</label>
+                            </div>
+                            <div>
+                                <input type="hidden" name="ri" value="-">
+                                <input type="radio" name="ri" value="Retaguardia Izquierdo" id="ri">
+                                <label for="ri">RI</label>
+                            </div>
                             
-                        </tr>
-                        <tr>
-                            <td><input type="hidden" name="lienzo" value="-">
-                                <input type="radio" name="lienzo" value="Lienzo">Lienzo</td>
-                            <td><input type="hidden" name="vi" value="-">
-                                <input type="radio" name="vi" value="Vanguardia Izquierdo">VI</td>
-                            <td><input type="hidden" name="corneta" value="-">
-                                <input type="radio" name="corneta" value="Corneta">Corneta</td>
-                            <td><input type="hidden" name="ccorneta" value="-">
-                                <input type="radio" name="ccorneta" value="Cabo Corneta">Cabo Corneta</td>
-                        </tr> 
-                        <tr>
-                            <td><input type="hidden" name="abanderado" value="-">
-                                <input type="radio" name="abanderado" value="Abanderado">Abanderado</td>    
-                            <td><input type="hidden" name="rd" value="-">
-                                <input type="radio" name="rd" value="Retaguardia Derecho">RD</td>
-                            <td><input type="hidden" name="co" value="-">
-                                <input type="radio" name="co" value="Corneta de ordenes">C.O.</td>
-                            <td><input type="hidden" name="comandanteBG" value="-">
-                                <input type="radio" name="comandanteBG" value="Comandante Banda de Guerra">Comandante</td>
-                        </tr>
-                        <tr>
-                            <td><input type="hidden" name="comandanteEB" value="-">
-                                <input type="radio" name="comandanteEB" value="Comandante Escolta">Comandante</td>                    
-                            <td><input type="hidden" name="ri" value="-">
-                                <input type="radio" name="ri" value="Retaguardia Izquierdo">RI</td>
-                        </tr>
-                        
-                    </table>    
-            </div>
-        </div>
-        <br>
-        <div class="contenedor" id="medicos"><br> Datos médicos
-            <br>
-            <br>
-            <div id ="etiquetas">
-                N° Seguro Social: <input type="text" name="seguro">
-                Tipo de sangre: <input type="text" name="sangre">
-                <br>
-                <br>
-                Enfermedades crónicas y/o alergias: <br> 
-                <textarea name="enfermedad" placeholder="En caso de NO contar con alguna alergia o enfermedad poner Ninguno." rows="5" cols="40"></textarea>
+                        </div>
 
+                        <div class="parte">
+                            <div>
+                                <input type="hidden" name="Caja" value="-">
+                                <input type="radio" name="Caja" value="Caja" id="Caja">
+                                <label for="Caja">Caja</label>
+                            </div>
+                            <div>
+                                <input type="hidden" name="corneta" value="-">
+                                <input type="radio" name="corneta" value="Corneta" id="corneta">
+                                <label for="corneta">Corneta</label>
+                            </div>
+                            <div>
+                                <input type="hidden" name="co" value="-">
+                                <input type="radio" name="co" value="Corneta de ordenes" id="co">
+                                <label for="co">C.O.</label>
+                            </div>
+                        </div>
+                        <div class="parte">
+                            <div>
+                                <input type="hidden" name="Cabo_cajero" value="-">
+                                <input type="radio" name="Cabo_cajero" value="Cabo cajero" id="cabo_cajero">
+                                <label for="Cabo_cajero">Cabo cajero</label>
+                            </div>
+                            <div>
+                                <input type="hidden" name="ccorneta" value="-">
+                                <input type="radio" name="ccorneta" value="Cabo Corneta" id="ccorneta">
+                                <label for="ccorneta">Cabo Corneta</label>
+                            </div>
+                            <div>
+                                <input type="hidden" name="comandanteBG" value="-">
+                                <input type="radio" name="comandanteBG" value="Comandante Banda de Guerra" id="comandanteBD">
+                                <label for="comandanteBD">Comandante</label>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="titulo">
+                Datos Médicos
+            </div>
+            <div class="datosMedicos">
+                <div>
+                    <label for="seguro">N° Seguro Social</label>
+
+                    <input type="text" name="seguro" id="seguro">
+                </div>
+                <div>
+                    <label for="sangre">Tipo de sangre</label>
+                    <input type="text" name="sangre" id="sangre">
+                </div>
+                <div>
+                    <br>
+                    <div>
+                        <label for="">Enfermedades crónicas y/o alergias:</label>
+                    </div>
+                    <div>
+                        <textarea name="enfermedad" placeholder="En caso de NO contar con alguna alergia o enfermedad poner Ninguno." rows="5" cols="40"></textarea>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <input type="submit" value="registrar">
+        <div class="btnSubmit">
+            <div class="btn-Registrar">
+                <a href="index.html"><input type="submit" value="Registrar" class="btn"></a>
+            </div>
+            <div class="btn-Salir">
+                <a href="index.html"> <input type="button" value="Salir" class="btn"></a>
+            </div>
+        </div>
 
     </form>
     
